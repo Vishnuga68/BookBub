@@ -1,0 +1,208 @@
+body {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-image: url("2.png");
+  background-color: #fdf4e3; 
+  color: #333;
+  padding-top: 100px; 
+}
+
+header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #fdf4e3; 
+  box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 1000;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px; 
+  margin: 0 auto; 
+  padding: 15px 20px;
+}
+
+
+.logo-container {
+  display: flex;
+  align-items: center;
+}
+
+
+.logo {
+  height: 70px;
+  width: auto;
+  margin-right: 10px;
+  border-radius: 300px;
+}
+
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  margin-right: -100px;
+  padding: 0;
+}
+
+.nav-links li {
+  margin-left: 20px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: brown;
+  font-weight: bold;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.nav-links li a:hover {
+  color: #c76a33; 
+}
+
+
+
+.search-section {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.search-section input {
+  width: 50%;
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ddd;
+}
+
+
+.books-section {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.book-card {
+  background-color: white;
+  border: 1px solid #ddd;
+  width: 250px;
+  height:440px;
+  padding: 15px;
+  border-radius: 8px;
+  box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.1);
+  text-align: left;
+  cursor: pointer;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.book-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+.book-card img {
+  width: 100%;
+  height: 65%;
+  border-radius: 8px;
+}
+
+.book-card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.book-card p {
+  font-size: 14px;
+  color: #555;
+}
+
+.book-card button {
+  background-color: blue;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  margin-top: 10px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.book-card button:hover {
+  background-color:rgb(46, 46, 249);
+}
+
+
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
+  margin-top: 60px;
+}
+
+.modal-content {
+  background-color: white;
+  text-align: center;
+  padding: 20px;
+  margin: 4% auto;
+  width: 30%;
+  border-radius: 10px;
+  position: relative;
+}
+
+.close {
+  color: black;
+  font-size: 35px;
+  font-weight: bold;
+  position: absolute;
+  top: 10px;
+  right: 20px;
+  cursor: pointer;
+}
+
+.modal-footer {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.modal-footer button {
+  background-color: green;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.modal-footer button:hover {
+  background-color: rgb(9, 155, 9);
+}
+
+
+footer {
+  background-color: #c76a33;
+  color: white;
+  text-align: center;
+  padding: 10px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  margin-bottom: 20px;
+}
+
+.footer-p{
+  margin-top: 5px;
+}

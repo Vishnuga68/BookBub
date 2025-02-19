@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login - Book-Bub</title>
+  <link rel="stylesheet" href="../CSS/login-styles.css">
+</head>
+<body>
+  <main>
+    <section class="login-section" id="login-section">
+      <h2>Login to Your Account</h2>
+      <form id="login-form">
+        <label for="username">Username</label>
+        <input type="text" id="username" name="username" placeholder="Enter your username" required>
+
+        <label for="password">Password</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required>
+
+        <button type="submit">Login</button>
+      </form>
+      <p class="signup-text">
+        Don't have an account? <a href="#" id="signup-link">Sign up here</a>
+      </p>
+    </section>
+
+    <section class="signup-section" id="signup-section" style="display:none;">
+      <h2>Register an Account</h2>
+      <form id="signup-form">
+        <label for="full-name">Full Name</label>
+        <input type="text" id="full-name" name="full-name" placeholder="Enter your full name" required>
+
+        <label for="nic">NIC</label>
+        <input type="text" id="nic" name="nic" placeholder="Enter your NIC" required>
+
+        <label for="phone">Phone</label>
+        <input type="text" id="phone" name="phone" placeholder="Enter your phone number" required>
+
+        <label for="new-username">Username</label>
+        <input type="text" id="new-username" name="new-username" placeholder="Choose a username" required>
+
+        <label for="new-password">Password</label>
+        <input type="password" id="new-password" name="new-password" placeholder="Choose a password" required>
+
+        <button type="submit">Register</button>
+      </form>
+      <p class="login-text">
+        Already have an account? <a href="#" id="login-link">Login here</a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p class="footer-p">&copy; 2024 Book Bub. All rights reserved.</p>
+</footer>
+
+  <script src="../JS/login.js"></script>
+</body>
+</html>

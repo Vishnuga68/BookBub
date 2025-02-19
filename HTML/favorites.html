@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Favorite Books</title>
+    <link rel="stylesheet" href="../CSS/favorites-styles.css">
+</head>
+
+<body>
+
+    <header>
+        <nav>
+
+            <div class="logo-container">
+                <a href="home.html">
+                    <img src="../Image/BBLogo.webp" alt="Book Bub Logo" class="logo">
+                </a>
+            </div>
+
+
+            <ul class="nav-links">
+                <li><a href="home.html" class="nav-link">Home</a></li>
+                <li><a href="about.html" class="nav-link">About</a></li>
+                <li><a href="contact.html" class="nav-link">Contact</a></li>
+                <li><a href="Books.html" class="nav-link">Books</a></li>
+                <li><a href="favorites.html" class="nav-link">Favorites</a></li>
+                <li><a href="login.html" id="logout-btn" class="nav-link">Log Out</a></li>
+            </ul>
+        </nav>
+    </header>
+
+
+    <div class="search-container">
+        <input type="text" id="search-bar" placeholder="Search for your favorite books..." oninput="searchBooks()">
+    </div>
+
+    <section class="favorites-section" id="favorites-container">
+
+    </section>
+
+
+    <div id="book-modal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <div id="book-detail">
+
+            </div>
+            <div class="modal-footer">
+                <a href="" id="pdf-link" target="_blank">
+                    <button id="pdf-button">View PDF</button>
+                </a>
+                <button id="delete-button" onclick="deleteBook()">Delete from Favorites</button>
+            </div>
+        </div>
+    </div>
+    <pre>
+
+
+
+    </pre>
+
+    <footer>
+        <p class="footer-p">&copy; 2024 Book Bub. All rights reserved.</p>
+    </footer>
+
+    <script src="../JS/favorites.js"></script>
+</body>
+
+</html>
